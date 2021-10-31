@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dynamic table</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body  style="background-image:url('https://t3.ftcdn.net/jpg/03/55/60/70/240_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg');">
+    <div class="box-container">
+      <div class="box">
+        <div class="input">
+          <input type="text" placeholder="Student ID" id="stdid">
+          <input type="text" placeholder="Student Name" id="stdname">
+          <input type="text" placeholder="Student Department" id="stddept">
+          <input type="number" placeholder="Student Marks" id="stdmarks">
+        </div>
+        <div class="btn">
+          <input type="button" value="Add Record" id="create_record" onclick="createRecord()" style="color:red;">
+          <input type="button" value="Save Record" id="save_record" onclick="saveRecord()" style="display:none; color:red;">
+        </div>
+        <div class="mytable">
+          <table id="MyDynamicTable">
+            <caption>Student Details</caption>
+            <tr class="tablerow">
+              <th class="heading">Student Id</th>
+              <th class="heading">Student Name</th>
+              <th class="heading">Student Department</th>
+              <th class="heading">Student Marks</th>
+              <th class="heading">&nbsp&nbsp&nbsp</th>
+              <th class="heading">&nbsp&nbsp&nbsp</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
